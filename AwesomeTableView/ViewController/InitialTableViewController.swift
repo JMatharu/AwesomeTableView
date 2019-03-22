@@ -16,8 +16,6 @@ class InitialTableViewController: UITableViewController {
     }
     
     private func registerCell() {
-//        tableView.register(AppCellTableViewCell.self, forCellReuseIdentifier: "AppCellTableViewCell")
-//        tableView.register(UINib(nibName: "AppCellTableViewCell", bundle: nil), forCellReuseIdentifier: "AppCellTableViewCell")
         tableView.registerCellWithNib(AppCellTableViewCell.self)
     }
 }
@@ -30,10 +28,6 @@ extension InitialTableViewController {
     
     override func tableView(_ tableView: UITableView,
                             cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        guard let cell = tableView.dequeueReusableCell(withIdentifier: "AppCellTableViewCell",
-//                                                       for: indexPath) as? AppCellTableViewCell else {
-//            return UITableViewCell()
-//        }
         let cell: AppCellTableViewCell = tableView.dequeueReusableCell(for: indexPath)
         cell.nameLabel.text = "Hello"
         return cell
