@@ -40,12 +40,12 @@ return UITableViewCell()
 let cell: AppCellTableViewCell = tableView.dequeueReusableCell(for: indexPath)
 ```
 
-### Problem - Reduced Duplicate Code
+## Reduce Duplicated UI code 
 ### Solution - In Progress
 
-### Problem - Enums and Switch as Tableview view model
-### Solution
-In class
+## Enums as Table View models
+
+Sample In class
 ```InitialTableViewController.swift```
 
 ## Contributing
