@@ -13,8 +13,7 @@ Problem with Tableview that can be handled easily with Generics, Subscripts, Enu
 
 ## Eliminate Reusable Identifier
 
-### Problem
-#### Register Cell
+### Problem - Register Cell
 ```swift
 tableView.register(AppCellTableViewCell.self, forCellReuseIdentifier: "AppCellTableViewCell")
 ```
@@ -28,7 +27,7 @@ tableView.register(UINib(nibName: "AppCellTableViewCell", bundle: nil), forCellR
 tableView.registerCellWithNib(AppCellTableViewCell.self)
 ```
 
-#### Dequeue Reusable Cell
+### Problem - Dequeue Reusable Cell
 ```swift
 guard let cell = tableView.dequeueReusableCell(withIdentifier: "AppCellTableViewCell", for: indexPath) as? AppCellTableViewCell else {
 return UITableViewCell()
@@ -40,6 +39,14 @@ return UITableViewCell()
 ```swift
 let cell: AppCellTableViewCell = tableView.dequeueReusableCell(for: indexPath)
 ```
+
+### Problem - Reduced Duplicate Code
+### Solution - In Progress
+
+### Problem - Enums and Switch as Tableview view model
+### Solution
+In class
+```InitialTableViewController.swift```
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
