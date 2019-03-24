@@ -20,19 +20,30 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GHN-a9-BUA" userLabel="Name">
-                        <rect key="frame" x="139" y="11.5" width="42" height="21"/>
+                        <rect key="frame" x="20" y="11.5" width="42" height="21"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0Dk-Bv-dCs">
+                        <rect key="frame" x="72" y="5" width="228" height="33.5"/>
+                        <nil key="textColor"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="GHN-a9-BUA" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="oHA-xE-C5e"/>
+                    <constraint firstItem="0Dk-Bv-dCs" firstAttribute="leading" secondItem="GHN-a9-BUA" secondAttribute="trailing" constant="10" id="83u-JH-Qs1"/>
+                    <constraint firstAttribute="bottom" secondItem="0Dk-Bv-dCs" secondAttribute="bottom" constant="5" id="X8S-ag-mZn"/>
+                    <constraint firstAttribute="trailing" secondItem="0Dk-Bv-dCs" secondAttribute="trailing" constant="20" id="k2K-to-wOO"/>
                     <constraint firstItem="GHN-a9-BUA" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rmW-DZ-zSr"/>
+                    <constraint firstItem="GHN-a9-BUA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vEe-KG-3Ax"/>
+                    <constraint firstItem="0Dk-Bv-dCs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="yJz-C3-pYV"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="itemTextField" destination="0Dk-Bv-dCs" id="1z6-rH-Klc"/>
                 <outlet property="nameLabel" destination="GHN-a9-BUA" id="PoY-6y-9cV"/>
             </connections>
         </tableViewCell>
